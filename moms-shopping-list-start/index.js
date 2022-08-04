@@ -14,9 +14,6 @@ form.addEventListener("submit", function(event){
     const edit = document.createElement('button')
     edit.textContent = "edit"
     ul.append(edit)
-    edit.addEventListener("click", () => {
-        edit.parentElement.edit();
-       })
 
     const remove = document.createElement('button')
     remove.textContent = "x"

@@ -1,16 +1,35 @@
-const header = document.getElementById("header");
-header.innerHTML += "<p>JavaScript Made This !!</p>"
-header.innerHTML += "<p><span id='my-name'>DiLeonté Burnside</span> made this</p>"
+const h1 = document.createElement("h1")
+h1.textContent = "JavaScript Made This !!";
+document.getElementById("header").appendChild(h1);
+h1.className = "header";
 
-document.getElementById("my-name").style.color = "blue"
+const subTitle = document.createElement("subTitle")
+subTitle.innerHTML += '<span class="name">DiLeonté Burnside</span> made this';
+document.getElementById("header").appendChild(subTitle);
+subTitle.className = "header";
 
-const leftMessages = document.getElementsByClassName("message left");
-leftMessages[0].textContent = "I have some exciting news to tell you!";
-leftMessages[1].textContent = "I got the job!";
+const messages = document.getElementsByClassName("message");
 
-const rightMessages = document.getElementsByClassName("message right");
-rightMessages[0].textContent = "What's that ?!";
-rightMessages[1].textContent = "That's great!";
+messages[0].textContent = "I have some exciting news to tell you!";
+messages[1].textContent = "What's that ?!";
+messages[2].textContent = "I got the job!";
+messages[3].textContent = "That's great!";
 
-const clear = document.getElementById('clear-button')
-clear.innerHTML = "<input type='reset' value='Clear'></input>"
+document.getElementById("clear-button").addEventListener("click", clear)
+
+function clear (){
+document.getElementById("clear-button")
+for (var i = 0; i < messages.length; i++){
+    messages[i].textContent = ""
+   }
+}
+
+
+
+
+
+
+
+document.getElementsByClassName("message left").addEventListener("toggle", toggle)
+
+function toggle() { document.getElementById("message left").style.backgroundColor = "red" }
