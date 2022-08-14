@@ -24,12 +24,36 @@ for (var i = 0; i < messages.length; i++){
    }
 }
 
+const dropDown = document.getElementById("theme-drop-down")
 
+dropDown.classList.toggle("theme-two");
 
+dropDown.addEventListener("change", () => {
+        for (let i = 0; i < messages.length; i++) {
+            messages[i].classList.toggle("theme-two");
+        }
+    })
 
+const send = document.getElementById("send");
+const inputBox = document.getElementById("input")
 
+function newFunction (e) {
+    e.preventDefault()
+    const newDiv = document.createElement("div")
+    const mess = document.getElementsByClassName("message")
+    console.log("list of message class divs", mess)
+    console.log("2nd to last message div", mess[mess.length-1])
+    const secondLastDiv = mess[mess.length-1]
+    if (secondLastDiv.classList.contains("left")){
+        newDiv.classList.add("right")
+    }
+    else {
+        newDiv.classList.add("left")
+    }
+    document.getElementById("newmessage").appendChild(newDiv)
+    newDiv.textContent = inputBox.value
+    newDiv.classList.add("message")
+    
+}
 
-
-document.getElementsByClassName("message left").addEventListener("toggle", toggle)
-
-function toggle() { document.getElementById("message left").style.backgroundColor = "red" }
+send.addEventListener('click', newFunction)

@@ -35,3 +35,12 @@
     align-self: flex-start;
     background-color: burlywood;
 }
+
+.left.theme-two {
+    background-color: red;
+}
+
+.right.theme-two {
+    background-color: black;
+    color: white
+}
