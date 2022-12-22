@@ -1,0 +1,133 @@
+#grid{
+    display:grid;
+     grid-template-columns: repeat(auto-fit, 1fr);  
+     grid-template-rows: repeat(5, 1fr);
+     grid-gap: 20px;
+     height:350px;
+}
+
+.header{
+        
+    background-color: red;
+    height: 40px;
+    font-size: large;
+    border-radius: 10px;
+    grid-column: 1/6;
+}
+.sBar{
+    background-color: yellow;
+    height: 40px;
+    font-size: large;
+    border-radius: 10px;
+    grid-row: 2/3;
+    grid-column: 1/6;
+}
+.content{
+    background-color: blue;
+    height: 90px;
+    font-size: large;
+    border-radius: 10px;
+    grid-row: 3/4;
+    grid-column: 1/6;
+}
+.sBar2{
+    background-color: green;
+    height: 40px;
+    font-size: large;
+    border-radius: 10px;
+    grid-row:4/5 ;
+    grid-column: 1/6;
+}
+.footer{
+    background-color: purple;
+    height: 40px;
+    font-size: large;
+    border-radius: 10px;
+    grid-row: 5/6;
+    grid-column: 1/6;
+}
+
+@media only screen and (min-width:500px)  {
+ 
+    .header{
+        background-color: red;
+        height: 40px;
+        font-size: large;
+        border-radius: 10px;
+        grid-column: 1/6;
+    }
+    .sBar{
+        background-color: yellow;
+        height: 90px;
+        font-size: large;
+        border-radius: 10px;
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .content{
+        background-color: blue;
+        height: 90px;
+        font-size: large;
+        border-radius: 10px;
+        grid-row: 2/3;
+        grid-column: 2/6;
+    }
+    .sBar2{
+        background-color: green;
+        height: 40px;
+        font-size: large;
+        border-radius: 10px;
+        grid-row: 3/4 ;
+        grid-column: 1/6;
+    }
+    .footer{
+        background-color: purple;
+        height: 40px;
+        font-size: large;
+        border-radius: 10px;
+        grid-row: 4/5;
+        grid-column: 1/6;
+    }
+}
+@media only screen and (min-width:1200px) {
+    
+    .header{
+        background-color: red;
+        height: 40px;
+        font-size: large;
+        border-radius: 10px;
+        grid-column: 1/6;
+    }
+    .sBar{
+        background-color: yellow;
+        height: 90px;
+        font-size: large;
+        border-radius: 10px;
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .content{
+        background-color: blue;
+        height: 90px;
+        font-size: large;
+        border-radius: 10px;
+        grid-row: 2/3;
+        grid-column: 2/5;
+    }
+    .sBar2{
+        background-color: green;
+        height: 90px;
+        font-size: large;
+        border-radius: 10px;
+        grid-row: 2/3 ;
+        grid-column: 5/6;
+    }
+    .footer{
+        background-color: purple;
+        height: 40px;
+        font-size: large;
+        border-radius: 10px;
+        grid-row: 3/4;
+        grid-column: 1/6;
+    }
+}

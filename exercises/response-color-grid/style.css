@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+#boxPk {
+    display: block;
+    height: 100px;
+    border: 5px solid white;
+    background-color: #F5C6D6;
+}
+
+#boxDp1 {
+    display: block;
+    height: 100px;
+    border: 5px solid white;
+    background-color: #EE2E84;
+    display: inline-block;
+    width: 25%;
+}
+
+#boxDp2 {
+    display: block;
+    height: 100px;
+    border: 5px solid white;
+    background-color: #EE2E84;
+    display: inline-block;
+    width: 25%;
+}
+
+#boxDp3 {
+    display: block;
+    height: 100px;
+    border: 5px solid white;
+    background-color: #EE2E84;
+    display: inline-block;
+    width: 25%;
+}
+
+#boxDp4 {
+    display: block;
+    height: 100px;
+    border: 5px solid white;
+    background-color: #EE2E84;
+    display: inline-block;
+    width: 25%;
+}
+
+#boxCy1 {
+    display: block;
+    height: 100px;
+    border: 5px solid white;
+    background-color: #85CFD8;
+    display: inline-block;
+    width: 50%
+}
+
+#boxCy2 {
+    display: block;
+    height: 100px;
+    border: 5px solid white;
+    background-color: #85CFD8;
+    display: inline-block;
+    width: 50%
+}
+
+#boxGr {
+    display: block;
+    height: 100px;
+    border: 5px solid white;
+    background-color: #8DC63F;
+    display: inline-block;
+    width: 75%
+}
+
+#boxOr {
+    display: block;
+    height: 100px;
+    border: 5px solid white;
+    background-color: #E76E34;
+    display: inline-block;
+    width: 25%
+}
+
+@media only screen and (max-width: 768px){
+
+#boxPk {
+    display: block;
+    height: 100px;
+    background-color: #F5C6D6;
+}
+
+#boxDp1 {
+    display: block;
+    height: 100px;
+    background-color: #EE2E84;
+}
+
+#boxDp2 {
+    display: block;
+    height: 100px;
+    background-color: #EE2E84;
+}
+
+#boxDp3 {
+    display: block;
+    height: 100px;
+    background-color: #EE2E84;
+}
+
+#boxDp4 {
+    display: block;
+    height: 100px;
+    background-color: #EE2E84;
+}
+
+#boxCy1 {
+    display: block;
+    height: 100px;
+    background-color: #85CFD8;
+}
+
+#boxCy2 {
+    display: block;
+    height: 100px;
+    background-color: #85CFD8;
+}
+
+#boxGr {
+    display: block;
+    height: 100px;
+    background-color: #8DC63F;
+}
+
+#boxOr {
+    display: block;
+    height: 100px;
+    background-color: #E76E34;
+}
+}
