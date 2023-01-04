@@ -5,7 +5,7 @@ const num2 = readline.keyIn('Please enter your second number ')
 const op = readline.keyIn('Please enter the operation to perform: (a)dd, (s)ub, (m)ul, (d)iv')
 
 function add (num1, num2){  
-    return num1 + num2
+    return Number(num1) + Number(num2)
 }
 function sub (num1, num2){  
     return num1 - num2
